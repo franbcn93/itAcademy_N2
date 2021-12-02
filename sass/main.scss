@@ -1,0 +1,81 @@
+$primary: #5265e1;
+$secondary: #fa5959;
+$twenty: 20px;
+$menuMobile: #1e272e;
+
+// import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.navbar {
+  padding-top: $twenty;
+}
+
+.btnLogin {
+  background-color: $secondary;
+}
+
+.nav-link {
+  padding-right: $twenty * 2 !important;
+}
+
+.login {
+  padding-right: $twenty !important;
+  margin: 5px -8px !important;
+}
+
+.firstImg {
+  width: -webkit-fill-available;
+  margin-top: $twenty * 5;
+  -moz-box-shadow: 10px 10px 5px $primary;
+  -webkit-box-shadow: 10px 10px 5px $primary;
+  box-shadow: 88px 63px 0px $primary;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 24px;
+}
+
+.bookmark {
+  padding-top: $twenty * 6;
+  margin: $twenty $twenty * 2;
+}
+
+.bookmarkText {
+  padding: $twenty/2 $twenty * 2;
+  opacity: 0.6;
+}
+
+.bntEx1 {
+  padding-left: $twenty * 2;
+}
+
+.bntEx1 button {
+  margin: 0 $twenty $twenty/2 0;
+}
+
+@media only screen and (max-width: 990px) {
+  .bntEx1 {
+    text-align: center;
+  }
+  .navbar-nav,
+  .btnLogin {
+    background-color: $menuMobile;
+    text-align: center;
+  }
+  .nav-link {
+    color: white !important;
+  }
+  .btn-danger {
+    // text-align: center !important;
+    background-color: $menuMobile;
+  }
+  .login {
+    padding-left: 26px;
+  }
+  .btnLogin {
+    width: 100%;
+    display: block;
+  }
+  .nav-link {
+    padding-right: 0px !important;
+    text-align: center !important;
+  }
+}

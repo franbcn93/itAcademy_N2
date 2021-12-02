@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sass/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>S2. Bootstrap&SASS</title>
+</head>
+<body>
+
+  <!-- La barra de navegació -->
+  <div class="container">
+    <div class="row">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/Imagenes/logo-bookmark.svg" alt="" width="140" height="24" class="d-inline-block align-text-top">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="./assets/Imagenes/icon-hamburger.svg" alt="" srcset="">
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="#">FEATURES</a>
+              <a class="nav-link" href="#">PRICING</a>
+              <a class="nav-link" href="#">CONTACT</a>
+              <div class="login">
+                <button class="btn btn-outline-light btn-sm btnLogin" type="button">LOGIN</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  
+
+    <!-- El contingut principal, usant el grid responsive -->
+    <!-- Cambio el orden de las columnas en el móvil -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="bookmark">A Simple Bookmark Manager</h2>
+          <p class="bookmarkText">Lorem ipsum dolor sit amet consectetur adipiscing elit luctus dictum porttitor 
+            senectus, aenean vestibulum ut natoque pellentesque volutpat non nascetur orci 
+            quam.</p>
+            <div class="bntEx1">
+              <button type="button" class="btn btn-primary">Get it on Chrome</button>
+              <button type="button" class="btn btn-light">Get it on Firefox</button>
+            </div>            
+        </div>
+        <div class="col-md-6 order-first order-md-last">
+          <img class="firstImg" src="./assets/Imagenes/Selección_010.png" alt="">
+        </div>
+      </div>    
+    </div>
+  
+</body>
+</html>
