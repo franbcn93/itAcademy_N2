@@ -4,6 +4,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11957,6 +11958,10 @@ fieldset:disabled .btn {
   }
 }
 
+body {
+  font-family: "Playfair Display", serif;
+}
+
 .navbar {
   padding-top: 20px;
 }
@@ -11974,7 +11979,8 @@ fieldset:disabled .btn {
   margin: 5px -8px !important;
 }
 
-.firstImg {
+.firstImg,
+.contentTabsImg {
   width: -webkit-fill-available;
   margin-top: 100px;
   -webkit-box-shadow: 10px 10px 5px #5265e1;
@@ -11999,6 +12005,94 @@ fieldset:disabled .btn {
 
 .bntEx1 button {
   margin: 0 20px 10px 0;
+}
+
+.funcionalitat {
+  text-align: center;
+  padding-top: 140px;
+}
+
+.textEx2 {
+  padding: 20px;
+}
+
+.contentTabs,
+.contentTabsImg {
+  margin: 40px;
+}
+
+.contentTabsImg {
+  margin: 40px 0;
+  -webkit-box-shadow: -110px 63px 0px #5265e1;
+          box-shadow: -110px 63px 0px #5265e1;
+}
+
+.nav-tabs .nav-item .nav-link {
+  color: #9d9d9d;
+  height: 48px;
+  padding: 0 24px;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-width: 160px;
+  text-align: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+  background-color: white;
+  position: relative;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+  border-bottom: 0.3rem solid #ef5777;
+  height: 48px;
+  padding: 0 32px;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-width: 160px;
+  text-align: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+  background-color: white;
+  position: relative;
+}
+
+.nav {
+  padding-left: 20%;
+}
+
+.nav-tabs .nav-item .nav-link {
+  border: none;
+}
+
+.nav-item a {
+  color: black !important;
+}
+
+.justify {
+  text-align: justify;
+  padding: 20px 60px;
+}
+
+.buttonBookmark {
+  float: left;
+  margin-left: 60px;
 }
 
 @media only screen and (max-width: 990px) {
@@ -12026,6 +12120,18 @@ fieldset:disabled .btn {
   .nav-link {
     padding-right: 0px !important;
     text-align: center !important;
+  }
+  .custom-tabs {
+    padding: 0 37%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .justify {
+    text-align: center;
+  }
+  .buttonBookmark {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

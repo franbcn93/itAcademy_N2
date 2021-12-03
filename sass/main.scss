@@ -6,6 +6,13 @@ $menuMobile: #1e272e;
 // import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+// Import font Playfair Display
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+body {
+  font-family: "Playfair Display", serif;
+}
+
 .navbar {
   padding-top: $twenty;
 }
@@ -23,7 +30,8 @@ $menuMobile: #1e272e;
   margin: 5px -8px !important;
 }
 
-.firstImg {
+.firstImg,
+.contentTabsImg {
   width: -webkit-fill-available;
   margin-top: $twenty * 5;
   -moz-box-shadow: 10px 10px 5px $primary;
@@ -49,6 +57,81 @@ $menuMobile: #1e272e;
 
 .bntEx1 button {
   margin: 0 $twenty $twenty/2 0;
+}
+
+// https://codepen.io/kiran-r-raj/pen/gOmvZBB
+// Part exercici 2, Nivell 1
+.funcionalitat {
+  text-align: center;
+  padding-top: 140px;
+}
+
+.textEx2 {
+  padding: $twenty;
+}
+
+.contentTabs,
+.contentTabsImg {
+  margin: $twenty * 2;
+}
+.contentTabsImg {
+  margin: ($twenty * 2) 0;
+  box-shadow: -110px 63px 0px #5265e1;
+}
+// Exercici 2
+.nav-tabs .nav-item .nav-link {
+  color: #9d9d9d;
+  height: 48px;
+  padding: 0 24px;
+  cursor: pointer;
+  box-sizing: border-box;
+  min-width: 160px;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  background-color: white;
+  position: relative;
+}
+
+// Tabs Exercici 2
+.nav-tabs .nav-item .nav-link.active {
+  border-bottom: 0.3rem solid #ef5777;
+  height: 48px;
+  padding: 0 32px;
+  cursor: pointer;
+  box-sizing: border-box;
+  min-width: 160px;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  background-color: white;
+  position: relative;
+}
+
+.nav {
+  padding-left: 20%;
+}
+
+.nav-tabs .nav-item .nav-link {
+  border: none;
+}
+
+.nav-item a {
+  color: black !important;
+}
+
+.justify {
+  text-align: justify;
+  padding: $twenty ($twenty * 3);
+}
+
+.buttonBookmark {
+  float: left;
+  margin-left: 60px;
 }
 
 @media only screen and (max-width: 990px) {
@@ -77,5 +160,20 @@ $menuMobile: #1e272e;
   .nav-link {
     padding-right: 0px !important;
     text-align: center !important;
+  }
+  // Tabs
+  .custom-tabs {
+    padding: 0 37%;
+  }
+}
+
+// Only for movile
+@media screen and (max-width: 770px) {
+  .justify {
+    text-align: center;
+  }
+  // Ocultem el botó per a movil
+  .buttonBookmark {
+    display: none;
   }
 }
