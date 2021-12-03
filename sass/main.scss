@@ -134,6 +134,47 @@ body {
   margin-left: 60px;
 }
 
+// Exercici 3
+.extension {
+  padding: ($twenty * 7) 0 0 0;
+}
+
+.myCards {
+  width: 17rem;
+  padding: 30px $twenty 6px $twenty;
+  margin: $twenty auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: $twenty * 2;
+}
+
+.opacityText {
+  opacity: 0.6;
+  padding-bottom: $twenty;
+}
+
+.CardImg {
+  padding-bottom: $twenty * 2;
+}
+
+.card1 {
+  margin-bottom: 300px;
+}
+
+.card2 {
+  margin-top: $twenty * 4;
+  margin-bottom: $twenty * 12;
+}
+
+.card3 {
+  margin-top: $twenty * 8;
+  margin-bottom: $twenty * 8;
+}
+
+hr {
+  border-top: 4px dotted #212529;
+  background-color: #fff;
+}
+
 @media only screen and (max-width: 990px) {
   .bntEx1 {
     text-align: center;
@@ -165,6 +206,16 @@ body {
   .custom-tabs {
     padding: 0 37%;
   }
+
+  // .card1 {
+  //   margin-top: -100px;
+  // }
+  .card2 {
+    margin-top: -220px;
+  }
+  .card3 {
+    margin-top: -160px;
+  }
 }
 
 // Only for movile
@@ -175,5 +226,11 @@ body {
   // Ocultem el botó per a movil
   .buttonBookmark {
     display: none;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 990px) {
+  .card2 {
+    margin-top: $twenty * 2;
   }
 }
