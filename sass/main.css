@@ -12100,7 +12100,7 @@ body {
 }
 
 .myCards {
-  width: 17rem;
+  width: 18rem;
   padding: 30px 20px 6px 20px;
   margin: 20px auto;
   /* Added */
@@ -12132,9 +12132,18 @@ body {
   margin-bottom: 160px;
 }
 
-hr {
+.dots {
   border-top: 4px dotted #212529;
   background-color: #fff;
+}
+
+.accordion-button:after {
+  background-image: url("../assets/Imagenes/icon-arrow.svg") !important;
+}
+
+.accordeonButton {
+  margin-top: 40px;
+  margin-left: 50%;
 }
 
 @media only screen and (max-width: 990px) {

@@ -140,7 +140,7 @@ body {
 }
 
 .myCards {
-  width: 17rem;
+  width: 18rem;
   padding: 30px $twenty 6px $twenty;
   margin: $twenty auto; /* Added */
   float: none; /* Added */
@@ -170,9 +170,19 @@ body {
   margin-bottom: $twenty * 8;
 }
 
-hr {
+.dots {
   border-top: 4px dotted #212529;
   background-color: #fff;
+}
+
+// Exercici part 4
+.accordion-button:after {
+  background-image: url("../assets/Imagenes/icon-arrow.svg") !important;
+}
+
+.accordeonButton {
+  margin-top: $twenty * 2;
+  margin-left: 50%;
 }
 
 @media only screen and (max-width: 990px) {
