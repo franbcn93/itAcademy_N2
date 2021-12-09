@@ -232,13 +232,80 @@ footer p {
 
 .icons {
   float: right;
-  margin-top: 30px;
+  margin-top: $twenty;
   margin-right: 23px;
 }
 
 .contactUs {
   float: right;
-  margin-top: -79px;
+  margin-top: -86px;
+}
+
+// Exercici 6 - Nivell 3
+.btnLogin,
+.nav-link,
+.getItChrome,
+.getItFirefox,
+.buttonBookmark,
+.installExension,
+.accordionHover,
+.accordeonButton,
+.contactUs,
+.markCompany,
+.fa-facebook-square,
+.fa-twitter {
+  transition: all 0.8s;
+}
+
+.btnLogin:hover,
+.contactUs:hover {
+  border: 1.2px solid $secondary;
+  border-radius: 8px;
+}
+
+.nav-link:hover,
+.accordionHover:hover,
+.markCompany:hover,
+.fa-facebook-square:hover,
+.fa-twitter:hover {
+  color: $secondary !important;
+}
+
+.nav-link:hover {
+  -webkit-transform: scale(1.2) !important;
+}
+
+.accordionHover:hover {
+  -webkit-transform: scale(1.05) !important;
+}
+
+.getItChrome:hover,
+.buttonBookmark:hover,
+.installExension:hover,
+.accordeonButton:hover {
+  border: 1.2px solid $primary;
+  border-radius: 8px;
+  color: $primary;
+  background-color: white;
+}
+.getItFirefox:hover {
+  border: 1.2px solid black;
+  border-radius: 8px;
+  color: black;
+}
+
+.contactUs:hover {
+  background-color: white;
+  color: $secondary;
+}
+
+// Modificació de la validació del email
+.valid-feedback,
+.invalid-feedback {
+  background-color: $secondary;
+  color: white;
+  margin-top: 0px;
+  padding: 5px;
 }
 
 @media only screen and (max-width: 990px) {
@@ -273,9 +340,6 @@ footer p {
     padding: 0 37%;
   }
 
-  // .card1 {
-  //   margin-top: -100px;
-  // }
   .card2 {
     margin-top: -220px;
   }
@@ -297,6 +361,9 @@ footer p {
     float: none;
     margin-top: -7px;
     width: 100%;
+  }
+  .stayUp {
+    height: 320px;
   }
 }
 
@@ -325,7 +392,7 @@ footer p {
     padding-bottom: $twenty;
   }
   .twitterIcon {
-    padding-left: $twenty * 3;
+    padding-left: 46%;
   }
   .logoImg {
     margin: auto;

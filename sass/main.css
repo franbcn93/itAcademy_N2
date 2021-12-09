@@ -12193,13 +12193,80 @@ footer p {
 
 .icons {
   float: right;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-right: 23px;
 }
 
 .contactUs {
   float: right;
-  margin-top: -79px;
+  margin-top: -86px;
+}
+
+.btnLogin,
+.nav-link,
+.getItChrome,
+.getItFirefox,
+.buttonBookmark,
+.installExension,
+.accordionHover,
+.accordeonButton,
+.contactUs,
+.markCompany,
+.fa-facebook-square,
+.fa-twitter {
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.btnLogin:hover,
+.contactUs:hover {
+  border: 1.2px solid #fa5959;
+  border-radius: 8px;
+}
+
+.nav-link:hover,
+.accordionHover:hover,
+.markCompany:hover,
+.fa-facebook-square:hover,
+.fa-twitter:hover {
+  color: #fa5959 !important;
+}
+
+.nav-link:hover {
+  -webkit-transform: scale(1.2) !important;
+}
+
+.accordionHover:hover {
+  -webkit-transform: scale(1.05) !important;
+}
+
+.getItChrome:hover,
+.buttonBookmark:hover,
+.installExension:hover,
+.accordeonButton:hover {
+  border: 1.2px solid #5265e1;
+  border-radius: 8px;
+  color: #5265e1;
+  background-color: white;
+}
+
+.getItFirefox:hover {
+  border: 1.2px solid black;
+  border-radius: 8px;
+  color: black;
+}
+
+.contactUs:hover {
+  background-color: white;
+  color: #fa5959;
+}
+
+.valid-feedback,
+.invalid-feedback {
+  background-color: #fa5959;
+  color: white;
+  margin-top: 0px;
+  padding: 5px;
 }
 
 @media only screen and (max-width: 990px) {
@@ -12250,6 +12317,9 @@ footer p {
     margin-top: -7px;
     width: 100%;
   }
+  .stayUp {
+    height: 320px;
+  }
 }
 
 @media screen and (max-width: 770px) {
@@ -12276,7 +12346,7 @@ footer p {
     padding-bottom: 20px;
   }
   .twitterIcon {
-    padding-left: 60px;
+    padding-left: 46%;
   }
   .logoImg {
     margin: auto;
