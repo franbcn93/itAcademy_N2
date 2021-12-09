@@ -12142,8 +12142,64 @@ body {
 }
 
 .accordeonButton {
-  margin-top: 40px;
-  margin-left: 50%;
+  margin-top: 30px;
+  margin-left: 45%;
+}
+
+.stayUp {
+  text-align: center;
+  color: white;
+  background-color: #5265e1;
+  margin-top: 120px;
+  height: 300px;
+}
+
+h2, .h2 {
+  font-weight: bold;
+}
+
+h5, .h5 {
+  margin-top: 60px;
+}
+
+.contact {
+  color: white;
+}
+
+footer {
+  padding: 3px;
+  background-color: #242946;
+  color: white;
+}
+
+.logoImg {
+  color: white;
+  padding-left: 80px;
+}
+
+footer p {
+  display: inline-block;
+  font-size: 16px;
+  padding: 31px;
+}
+
+.markCompany {
+  font-size: 20px;
+}
+
+.bookMark {
+  margin-left: -12%;
+}
+
+.icons {
+  float: right;
+  margin-top: 30px;
+  margin-right: 23px;
+}
+
+.contactUs {
+  float: right;
+  margin-top: -79px;
 }
 
 @media only screen and (max-width: 990px) {
@@ -12181,6 +12237,19 @@ body {
   .card3 {
     margin-top: -160px;
   }
+  .bookMark {
+    margin-left: -15%;
+  }
+  footer p {
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px;
+  }
+  .contactUs {
+    float: none;
+    margin-top: -7px;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 770px) {
@@ -12189,6 +12258,39 @@ body {
   }
   .buttonBookmark {
     display: none;
+  }
+  .markCompany {
+    margin-left: -20%;
+    text-align: center;
+    display: -ms-grid;
+    display: grid;
+    margin: auto;
+    padding: 10px;
+  }
+  .icons {
+    float: none;
+  }
+  .facebookIcon {
+    margin-top: -43px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+  }
+  .twitterIcon {
+    padding-left: 60px;
+  }
+  .logoImg {
+    margin: auto;
+    display: -ms-grid;
+    display: grid;
+    margin-right: 41%;
+    padding-top: 12px;
+  }
+  .bookMark {
+    padding-top: -50px;
+    margin-top: -37px;
+  }
+  .contact {
+    margin-top: 40px;
   }
 }
 

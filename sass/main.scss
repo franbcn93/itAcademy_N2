@@ -181,8 +181,64 @@ body {
 }
 
 .accordeonButton {
-  margin-top: $twenty * 2;
-  margin-left: 50%;
+  margin-top: 30px;
+  margin-left: 45%;
+}
+
+// eXERCICI 5
+.stayUp {
+  text-align: center;
+  color: white;
+  background-color: $primary;
+  margin-top: $twenty * 6;
+  height: 300px;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+h5 {
+  margin-top: $twenty * 3;
+}
+
+.contact {
+  color: white;
+}
+
+footer {
+  padding: 3px;
+  background-color: #242946;
+  color: white;
+}
+
+.logoImg {
+  color: white;
+  padding-left: $twenty * 4;
+}
+
+footer p {
+  display: inline-block;
+  font-size: 16px;
+  padding: 31px;
+}
+
+.markCompany {
+  font-size: 20px;
+}
+.bookMark {
+  margin-left: -12%;
+}
+
+.icons {
+  float: right;
+  margin-top: 30px;
+  margin-right: 23px;
+}
+
+.contactUs {
+  float: right;
+  margin-top: -79px;
 }
 
 @media only screen and (max-width: 990px) {
@@ -226,6 +282,22 @@ body {
   .card3 {
     margin-top: -160px;
   }
+
+  .bookMark {
+    margin-left: -15%;
+  }
+
+  footer p {
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .contactUs {
+    float: none;
+    margin-top: -7px;
+    width: 100%;
+  }
 }
 
 // Only for movile
@@ -236,6 +308,37 @@ body {
   // Ocultem el botó per a movil
   .buttonBookmark {
     display: none;
+  }
+  .markCompany {
+    margin-left: -20%;
+    text-align: center;
+    display: grid;
+    margin: auto;
+    padding: 10px;
+  }
+  .icons {
+    float: none;
+  }
+  .facebookIcon {
+    margin-top: -43px;
+    padding-right: $twenty * 3;
+    padding-bottom: $twenty;
+  }
+  .twitterIcon {
+    padding-left: $twenty * 3;
+  }
+  .logoImg {
+    margin: auto;
+    display: grid;
+    margin-right: 41%;
+    padding-top: 12px;
+  }
+  .bookMark {
+    padding-top: -50px;
+    margin-top: -37px;
+  }
+  .contact {
+    margin-top: $twenty * 2;
   }
 }
 
