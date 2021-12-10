@@ -19,14 +19,17 @@ body {
 
 .btnLogin {
   background-color: $secondary;
+  margin-top: -9px;
 }
 
 .nav-link {
   padding-right: $twenty * 2 !important;
+  padding-top: $twenty * 2 !important;
 }
 
 .login {
   padding-right: $twenty !important;
+  padding-top: $twenty * 2 !important;
   margin: 5px -8px !important;
 }
 
@@ -98,7 +101,7 @@ body {
 // Tabs Exercici 2
 .nav-tabs .nav-item .nav-link.active {
   border-bottom: 0.3rem solid #ef5777;
-  height: 48px;
+  height: 58px;
   padding: 0 32px;
   cursor: pointer;
   box-sizing: border-box;
@@ -139,12 +142,16 @@ body {
   padding: ($twenty * 7) 0 0 0;
 }
 
-.myCards {
+// Exercici 7
+%myCards {
   width: 18rem;
+  float: left;
   padding: 30px $twenty 6px $twenty;
-  margin: $twenty auto; /* Added */
-  float: none; /* Added */
-  margin-bottom: $twenty * 2;
+  margin: 20px 10px;
+}
+
+.card {
+  @extend %myCards;
 }
 
 .opacityText {
@@ -156,18 +163,12 @@ body {
   padding-bottom: $twenty * 2;
 }
 
-.card1 {
-  margin-bottom: 300px;
-}
-
-.card2 {
+.divCards .card:nth-child(0n + 2) {
   margin-top: $twenty * 4;
-  margin-bottom: $twenty * 12;
 }
 
-.card3 {
+.divCards .card:nth-child(0n + 3) {
   margin-top: $twenty * 8;
-  margin-bottom: $twenty * 8;
 }
 
 .dots {
@@ -215,6 +216,7 @@ footer {
 .logoImg {
   color: white;
   padding-left: $twenty * 4;
+  margin-right: 2%;
 }
 
 footer p {
@@ -232,7 +234,7 @@ footer p {
 
 .icons {
   float: right;
-  margin-top: $twenty;
+  margin-top: 30px;
   margin-right: 23px;
 }
 
@@ -308,6 +310,17 @@ footer p {
   padding: 5px;
 }
 
+// Modificaciones del .navbar-nav
+.navbar-nav,
+.nav-link {
+  padding: $twenty;
+}
+
+.faIconsF,
+.faIconsT {
+  display: none !important;
+}
+
 @media only screen and (max-width: 990px) {
   .bntEx1 {
     text-align: center;
@@ -319,6 +332,9 @@ footer p {
   }
   .nav-link {
     color: white !important;
+    border-style: dotted none;
+    border-width: 2px;
+    margin: -1px $twenty;
   }
   .btn-danger {
     // text-align: center !important;
@@ -340,13 +356,6 @@ footer p {
     padding: 0 37%;
   }
 
-  .card2 {
-    margin-top: -220px;
-  }
-  .card3 {
-    margin-top: -160px;
-  }
-
   .bookMark {
     margin-left: -15%;
   }
@@ -364,6 +373,26 @@ footer p {
   }
   .stayUp {
     height: 320px;
+  }
+  .divCards {
+    margin-left: 6%;
+  }
+  .divCards .card:nth-child(0n + 3) {
+    margin: 40px 0 80px 25%;
+  }
+
+  .faIconsF,
+  .faIconsT {
+    display: inline !important;
+    font-size: x-large;
+    color: white !important;
+  }
+  .faIconsF {
+    padding-top: 70px;
+    margin: 0 50px -8px 0;
+  }
+  .faIconsT {
+    margin: -16px 0 0 50px;
   }
 }
 
@@ -407,10 +436,60 @@ footer p {
   .contact {
     margin-top: $twenty * 2;
   }
+  .divCards {
+    margin-left: 19%;
+  }
+
+  .divCards .card:nth-child(1n + 2) {
+    margin: 40px 0;
+  }
 }
 
-@media screen and (min-width: 769px) and (max-width: 990px) {
-  .card2 {
-    margin-top: $twenty * 2;
+@media screen and (min-width: 1200px) {
+  .divCards {
+    margin: 7%;
   }
+  .abajo {
+    animation: desdeAbajo 1.2s ease-in-out;
+  }
+}
+
+@keyframes desdeIzquierda {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes desdeDerecha {
+  0% {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes desdeAbajo {
+  0% {
+    opacity: 0;
+    transform: translateY(300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.izq {
+  animation: desdeIzquierda 1s ease-in-out;
+}
+
+.der {
+  animation: desdeDerecha 1.5s ease-out;
 }
